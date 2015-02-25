@@ -21,3 +21,7 @@ Try:
    cabal install
    cabal run
    ```
+
+During `cabal install`, you may see the installation of `llvm-general` failing. 
+That's most likely because some C/C++ dependencies are missing (Cabal can't track 
+those, AFAIK). So you'll need to fix those in case this happens.
